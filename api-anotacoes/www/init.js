@@ -3,20 +3,24 @@ function salvar() {
     //const titulo = document.getElementById('titulo').value 
 
     //com jquery
+    const id = $('#id').val()
     const titulo = $('#titulo').val()
     const descricao = $('#descricao').val() 
 
     //if (!titulo) return alert('Título é obrigatório')
     //if (!descricao) return alert('Descrição é obrigatória')
 
+    const type = !id ? 'post' : 'put'
+
     $.ajax({
+        type: type,
         url: "/notes", 
-        type: "POST",
-        dataType: "json",
+        //dataType: "json",
         contentType: "application/json; charset=utf-8",
-        data: JSON.stringify({ title: titulo, description: descricao }),
+        data: JSON.stringify({ id:  id, title: titulo, description: descricao }),
         success: function (result) {
             alert(result.message)
+            $('#id').val('')
             $('#titulo').val('')
             $('#descricao').val('')
             listar()
@@ -32,9 +36,9 @@ function salvar() {
 
 function excluir(id) {
     $.ajax({
-        url: "/notes", 
         type: "DELETE",
-        dataType: "json",
+        url: "/notes", 
+        //dataType: "json",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify({ id: id }),
         success: function (result) {
@@ -50,13 +54,17 @@ function excluir(id) {
 
 
 function editar(id) {
+
+    console.log("id",id)
+
     $.ajax({
-        url: '/notes/' + id, 
-        type: 'GET',
-        dataType: 'json',
-        contentType: 'application/json; charset=utf-8',
+        type: "GET",
+        url: "/notes/"+id, 
+        //dataType: "json",
+        contentType: "application/json; charset=utf-8",
         success: function (result) {
             console.log(result)
+            $('#id').val(result.id)
             $('#titulo').val(result.title)
             $('#descricao').val(result.description)
          },
@@ -72,9 +80,9 @@ function listar() {
     $('.list').html('') //limpa a listagem  html
 
     $.ajax({
-        url: "/notes", 
         type: "GET",
-        dataType: "json",
+        url: "/notes", 
+        //dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function (result) {
             console.log(result)
@@ -83,7 +91,7 @@ function listar() {
                 <div class="item">
                 <h2>${note.title}</h2>
                 <p>${note.description}</p>
-                <button onclick="editar(${note.id})">Editar</button>
+                <button onclick="editar('${note.id}')">Editar</button>
                 <button onclick="excluir('${note.id}')">Excluir</button>
             </div>
                 `)     
