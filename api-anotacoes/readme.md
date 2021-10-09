@@ -28,3 +28,8 @@ Instalar o cors para tratar erros com HTML
 ~~~Terminal
 npm install cors
 ~~~
+
+Adicionar jquery pra usar ajax, antes de fechar o body
+~~~index.html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+~~~

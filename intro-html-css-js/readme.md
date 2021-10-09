@@ -33,6 +33,10 @@ Algumas tags não fecham < tag />
 < li >Cada elemento da lista< /li >
 < ul >Listas Desordenadas * * *< /ul >
 
+### Dicas
+
+Pesquisar no google imagem por  "notes ui design" e treinar com eles pra ficar bom no front
+
 
 
 ## CSS (Cascading Style Sheet)

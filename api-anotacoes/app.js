@@ -1,7 +1,14 @@
 const express = require('express')
 const { v4: uuidv4 } = require('uuid');
+const cors = require('cors')
+
 const app = express()
 app.use(express.json())
+app.use(cors()) //garantir segurança  na navegação
+
+//para entregar arquivos estaticos como imagens e css e arquivos javascript
+app.use(express.static('www')) 
+
 const port = 3000
 
 const notes = []
@@ -38,11 +45,11 @@ app.post('/notes', (req, res) => {
   const description = req.body.description
 
   if (!title) {
-    return res.status(400).json({ message: 'Informe o campo title' })
+    return res.status(400).json({ message: 'O campo titulo é obrigatório' })
   }
 
   if (!description) {
-    return res.status(400).json({ message: 'Informe o campo description' })
+    return res.status(400).json({ message: 'O campo descrição é obrigatório' })
   }
 
   notes.push({
@@ -73,11 +80,11 @@ app.put('/notes', (req, res) => {
   }
 
   if (!title) {
-    return res.status(400).json({ message: 'Informe o campo title' })
+    return res.status(400).json({ message: 'O campo titulo é obrigatório' })
   }
 
   if (!description) {
-    return res.status(400).json({ message: 'Informe o campo description' })
+    return res.status(400).json({ message: 'O campo descrição é obrigatório' })
   }
 
   for (const noteObject of notes) {
