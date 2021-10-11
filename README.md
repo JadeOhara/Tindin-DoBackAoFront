@@ -6,7 +6,7 @@ guilherme.prado@tindin.com.br
 fabio@tindin.com.br
 </p>
 
-## click pra conferir as práticas
+## Click pra conferir o front das práticas
 * [Página de Apresentação](https://jadeohara.github.io/Tindin-DoBackAoFront/intro-html-css-js/index.html)
 * [API Anotações](https://jadeohara.github.io/Tindin-DoBackAoFront/api-anotacoes/www/index.html)
 * [Jogo JoKenPô](https://github.com/JadeOhara/API-PedraPapelTesoura)
