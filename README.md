@@ -8,6 +8,7 @@ fabio@tindin.com.br
 
 ## click pra conferir as práticas
 * [Página de Apresentação](https://jadeohara.github.io/Tindin-DoBackAoFront/intro-html-css-js/index.html)
+* [API Anotações](https://jadeohara.github.io/Tindin-DoBackAoFront/api-anotacoes/www/index.html)
 * [Jogo JoKenPô](https://github.com/JadeOhara/API-PedraPapelTesoura)
 
 ## Prática Semana 1 - Jogo Pedra Papel Tesoura
