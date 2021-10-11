@@ -6,6 +6,10 @@ guilherme.prado@tindin.com.br
 fabio@tindin.com.br
 </p>
 
+## click pra conferir as práticas
+* [Página de Apresentação](https://jadeohara.github.io/Tindin-DoBackAoFront/intro-html-css-js/index.html)
+* [Jogo JoKenPô](https://jadeohara.github.io/Tindin-DoBackAoFront/intro-html-css-js/index.html)
+
 ## Prática Semana 1 - Jogo Pedra Papel Tesoura
 
 - Criar frontend
