@@ -6,12 +6,13 @@ guilherme.prado@tindin.com.br
 fabio@tindin.com.br
 </p>
 
-## Click pra conferir o front das práticas
+## Front das Aulas
 * [Página de Apresentação](https://jadeohara.github.io/Tindin-DoBackAoFront/intro-html-css-js/index.html)
 * [API Anotações](https://jadeohara.github.io/Tindin-DoBackAoFront/api-anotacoes/www/index.html)
-* [Jogo JoKenPô](https://github.com/JadeOhara/API-PedraPapelTesoura)
 
 ## Prática Semana 1 - Jogo Pedra Papel Tesoura
+
+Click pra conferir o front do [Jogo JoKenPô](https://github.com/JadeOhara/API-PedraPapelTesoura)
 
 - Criar frontend
 - Criar uma API
