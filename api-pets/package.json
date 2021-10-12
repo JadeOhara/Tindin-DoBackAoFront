@@ -1,5 +1,5 @@
 {
-  "name": "template-node-ts",
+  "name": "api-pets",
   "version": "1.0.0",
   "description": "Template usando Nodejs + Express + Typescript",
   "main": "index.js",

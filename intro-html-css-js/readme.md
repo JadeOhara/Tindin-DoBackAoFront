@@ -88,3 +88,11 @@ C(reate)
 R(ead)
 U(pdate)
 D(elete)
+
+## Typescript
+
+Forma tipada do javascript.
+
+Vem com documentação própria inclusa.
+
+Previne erros no código.
