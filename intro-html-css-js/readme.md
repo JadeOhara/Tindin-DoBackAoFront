@@ -96,3 +96,6 @@ Forma tipada do javascript.
 Vem com documentação própria inclusa.
 
 Previne erros no código.
+
+## Angular
+
