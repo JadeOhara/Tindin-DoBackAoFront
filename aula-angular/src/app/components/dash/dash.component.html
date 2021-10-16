@@ -1,0 +1,7 @@
+<p>dash works!</p>
+
+<button (click)="backPage()">Back Page</button>
+
+<div *ngFor="let dash of dashList">
+    <p *ngIf="dash.active">{{dash.name}}</p>
+</div>

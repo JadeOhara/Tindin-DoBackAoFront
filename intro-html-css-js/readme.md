@@ -99,3 +99,34 @@ Previne erros no código.
 
 ## Angular
 
+Framework pra construção da interface de aplicações utilizando html, css, js, typescript ou dart. Criado por desenvolvedores do Google. Criar SPA - single page application
+
+### Blocos principais
+
+* Componentes - encapsular comportamentos, encapsular outros componentes pra serem reaproveitados. Um componente é  um tipo de classe
+
+@Component ({
+    selector: 'app',
+    templateUrl: './app.component.html',
+    styleUrls: [ './app.component.scss' ]
+})
+export class AppComponent {
+    title: string = 'Do Back  ao Front- Tindin'
+}
+
+  
+* Serviços - concentrar as regras de negócio da aplicação, cada service pode ser usado  por um ou mais  componentes
+
+* Roteamento - trocar as páginas quando solicitado sem dar reload no site
+
+* Diretivas - marcadores no dom que comunicam com o angular
+  - de atributo: alteram aparência e comportamento de um elemento,  componente ou outra diretiva
+  - estruturais: adicionar ou remover elementos do  dom
+
+* Template
+* Metadata
+* Data Binding
+* Injeção de Dependência
+
+* Lifecycle  Hooks - métodos hooks são executados sempre que há uma mudança dentro do componente
+
